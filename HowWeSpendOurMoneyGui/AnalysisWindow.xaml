@@ -1,0 +1,74 @@
+﻿<Window
+    x:Class="HowWeSpendOurMoneyGui.AnalysisWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Analysis"
+    Width="800"
+    Height="450"
+    DataContext="{Binding AnalysisViewModel, Source={StaticResource Locator}}"
+    mc:Ignorable="d">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+
+        <ItemsControl Margin="0,10,0,0" ItemsSource="{Binding PeriodAnalyses}">
+
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+
+                    <StackPanel Margin="20" Orientation="Vertical">
+
+                        <TextBlock FontWeight="Bold" Text="{Binding PeriodName, Mode=OneWay}" />
+
+                        <TextBlock>
+                            <Bold>Total:</Bold> <Run Text="{Binding TotalExpense, Mode=OneWay}" />
+                            €</TextBlock>
+
+                        <ItemsControl Margin="0,10,0,0" ItemsSource="{Binding TagStatistics}">
+
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1*" />
+                                            <ColumnDefinition Width="1*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid Grid.Column="0">
+
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="2*" />
+                                                <ColumnDefinition Width="1*" />
+                                                <ColumnDefinition Width="1*" />
+                                                <ColumnDefinition Width="1*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <TextBlock Grid.Column="0" Text="{Binding TagName}" />
+                                            <TextBlock Grid.Column="1"><Run Text="{Binding TagPercentage, Mode=OneWay}" />%</TextBlock>
+                                            <TextBlock Grid.Column="2">Total: <Run Text="{Binding TotalExpense, Mode=OneWay}" />€</TextBlock>
+                                            <TextBlock Grid.Column="3">Avg: <Run Text="{Binding AvgExpense, Mode=OneWay}" />€</TextBlock>
+
+                                        </Grid>
+
+                                        <StackPanel HorizontalAlignment="Center" Grid.Column="1" Orientation="Horizontal">
+                                            <TextBlock Text="TODO Grafici" />
+                                        </StackPanel>
+
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+
+                        </ItemsControl>
+
+                        <!--  TODO Qualche bel grafico a destra e ciao. Una torta o un istogramma  -->
+                    </StackPanel>
+
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+    </ScrollViewer>
+
+</Window>

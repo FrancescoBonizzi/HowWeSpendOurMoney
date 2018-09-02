@@ -1,0 +1,157 @@
+﻿<Window
+    x:Class="HowWeSpendOurMoneyGui.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="How we spend our money?"
+    Width="900"
+    Height="600"
+    DataContext="{Binding MainWindowViewModel, Source={StaticResource Locator}}"
+    mc:Ignorable="d">
+
+    <Grid>
+
+        <DockPanel LastChildFill="True">
+
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="File">
+                    <MenuItem Header="Import">
+                        <MenuItem Command="{Binding ParseBPMCommand}" Header="BPM" />
+                        <MenuItem Header="ING Direct" IsEnabled="False" />
+                    </MenuItem>
+                    <MenuItem Header="Analysis" Click="MenuItem_Click" /> <!-- TODO Tmp-->
+                    <MenuItem Header="History" />
+                    <MenuItem Header="Importing rules" />
+                    <Separator />
+                    <MenuItem Command="{Binding ExitApplicationCommand}"  Header="Exit" />
+
+                </MenuItem>
+            </Menu>
+
+            <StackPanel
+                Margin="10"
+                HorizontalAlignment="Right"
+                DockPanel.Dock="Bottom"
+                Orientation="Horizontal">
+                <Button
+                    Width="80"
+                    Margin="5"
+                    Padding="16,5"
+                    Content="Import"
+                    Command="{Binding ImportAllCommand}"/>
+                <Button
+                    Width="80"
+                    Margin="5"
+                    Padding="16,5"
+                    Content="Clear"
+                    Command="{Binding ClearAllCommand}" />
+                <Button
+                    Width="80"
+                    Margin="5"
+                    Padding="16,5"
+                    Command="{Binding ExitApplicationCommand}"
+                    Content="Exit" />
+            </StackPanel>
+
+            <DockPanel
+                Width="200"
+                Margin="10"
+                DockPanel.Dock="Right"
+                LastChildFill="True">
+
+                <TextBlock
+                    Margin="10"
+                    DockPanel.Dock="Top"
+                    FontSize="16"
+                    FontWeight="SemiBold"
+                    Foreground="#6200EE"
+                    Text="TAG"
+                    TextAlignment="Center" />
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+
+                    <DockPanel Grid.Row="0" LastChildFill="True">
+                        <TextBlock
+                            Margin="10"
+                            DockPanel.Dock="Top"
+                            FontSize="14"
+                            FontWeight="SemiBold"
+                            Foreground="#03DAC6"
+                            Text="This transaction tags"
+                            TextAlignment="Center" />
+                        <ListView ItemsSource="{Binding SelectedTransaction.Tags}" SelectedItem="{Binding SelectedTransactionTag}" />
+                    </DockPanel>
+
+                    <DockPanel Grid.Row="1" LastChildFill="True">
+                        <TextBlock
+                            Margin="10"
+                            DockPanel.Dock="Top"
+                            FontSize="14"
+                            FontWeight="SemiBold"
+                            Foreground="#03DAC6"
+                            Text="All tags"
+                            TextAlignment="Center" />
+                        <StackPanel
+                            HorizontalAlignment="Right"
+                            DockPanel.Dock="Bottom"
+                            Orientation="Horizontal">
+                            <Button
+                                Width="20"
+                                Margin="5"
+                                Command="{Binding RemoveTagFromSelectedTransaction}"
+                                Content="-" />
+                            <Button
+                                Width="20"
+                                Margin="5"
+                                Command="{Binding AddTagToSelectedTransaction}"
+                                Content="+" />
+                        </StackPanel>
+                        <ListView ItemsSource="{Binding Tags}" SelectedItem="{Binding SelectedTagListTag}" />
+                        <!--  Double click sarebbe carino + aggiungi selected tag  -->
+                    </DockPanel>
+
+                </Grid>
+
+            </DockPanel>
+
+            <DataGrid
+                Margin="10"
+                AlternatingRowBackground="#e0e0e0"
+                AlternationCount="2"
+                AutoGenerateColumns="False"
+                CanUserReorderColumns="False"
+                ColumnWidth="Auto"
+                IsReadOnly="True"
+                SelectionMode="Single"
+                ItemsSource="{Binding MoneyTransactions}"
+                SelectedItem="{Binding SelectedTransaction}">
+
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Width="20" Height="20" Source="{Binding Tags.Count, Converter={StaticResource TagsNumberIconConverter}}" />
+                            </DataTemplate>
+
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Binding="{Binding Date}" Header="Date" />
+                    <DataGridTextColumn Binding="{Binding Currency}" Header="Currency" />
+                    <DataGridTextColumn Binding="{Binding Amount}" Header="Amount" />
+                    <DataGridTextColumn Binding="{Binding Description}" Header="Description" />
+                </DataGrid.Columns>
+
+            </DataGrid>
+
+
+        </DockPanel>
+
+    </Grid>
+
+</Window>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowWeSpendOurMoney", "HowWeSpendOurMoney\HowWeSpendOurMoney.csproj", "{7F858E30-1807-4CA4-ACC4-2F10A22384C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowWeSpendOurMoneyGui", "HowWeSpendOurMoneyGui\HowWeSpendOurMoneyGui.csproj", "{C4CA8303-0D5D-4C50-92BC-6FD956A1FED1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F858E30-1807-4CA4-ACC4-2F10A22384C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F858E30-1807-4CA4-ACC4-2F10A22384C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F858E30-1807-4CA4-ACC4-2F10A22384C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F858E30-1807-4CA4-ACC4-2F10A22384C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4CA8303-0D5D-4C50-92BC-6FD956A1FED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4CA8303-0D5D-4C50-92BC-6FD956A1FED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4CA8303-0D5D-4C50-92BC-6FD956A1FED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4CA8303-0D5D-4C50-92BC-6FD956A1FED1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9C10A7E-06DD-43E1-8236-0443B5B15EB3}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+﻿<Application x:Class="HowWeSpendOurMoneyGui.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml"
+             xmlns:converters="clr-namespace:HowWeSpendOurMoneyGui.Converters"
+             xmlns:vm="clr-namespace:HowWeSpendOurMoneyGui.ViewModel">
+    <Application.Resources>
+        <vm:ViewModelLocator x:Key="Locator" />
+        <converters:TagsNumberIconConverter x:Key="TagsNumberIconConverter" />
+        <BitmapImage x:Key="OkTick" UriSource="/Icons/OkTick.png" />
+        <BitmapImage x:Key="NoTick" UriSource="/Icons/NoTick.png" />
+    </Application.Resources>
+</Application>
