@@ -7,6 +7,7 @@ using System.Linq;
 
 namespace HowWeSpendOurMoney.TransactionsParsers
 {
+    // Bpm = Banca Popolare di Milano
     public class BpmCsvTransactionParser : IMoneyTransactionsParser
     {
         public IEnumerable<MoneyTransaction> ParseTransactions(IEnumerable<string> moneyTransactionsRaw)
@@ -15,8 +16,6 @@ namespace HowWeSpendOurMoney.TransactionsParsers
                 throw new MoneyTransactionsParsingException("moneyTransactionsRaw cannot be null or empty");
 
             var moneyTransactions = new List<MoneyTransaction>();
-
-            Random r = new Random();
 
             foreach (var rawTransaction in moneyTransactionsRaw.Skip(1))
             {

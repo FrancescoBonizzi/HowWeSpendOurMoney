@@ -10,6 +10,8 @@
     DataContext="{Binding AnalysisViewModel, Source={StaticResource Locator}}"
     mc:Ignorable="d">
 
+    <!--  Binding tab per anno + all'interno una data grid  -->
+
     <ScrollViewer VerticalScrollBarVisibility="Auto">
 
         <ItemsControl Margin="0,10,0,0" ItemsSource="{Binding PeriodAnalyses}">
@@ -17,53 +19,50 @@
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
 
-                    <StackPanel Margin="20" Orientation="Vertical">
+                    <Grid Margin="20">
 
-                        <TextBlock FontWeight="Bold" Text="{Binding PeriodName, Mode=OneWay}" />
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
 
-                        <TextBlock>
-                            <Bold>Total:</Bold> <Run Text="{Binding TotalExpense, Mode=OneWay}" />
-                            €</TextBlock>
+                        <StackPanel Grid.Column="0" Orientation="Vertical">
+                            <TextBlock FontWeight="Bold" Text="{Binding PeriodName, Mode=OneWay}" />
 
-                        <ItemsControl Margin="0,10,0,0" ItemsSource="{Binding TagStatistics}">
+                            <TextBlock>
+                                <Bold>Total:</Bold> <Run Text="{Binding TotalExpense, Mode=OneWay, StringFormat={}{0:N}}" />
+                                €</TextBlock>
 
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate>
-                                    <Grid>
+                            <DataGrid
+                                Grid.Column="1"
+                                AlternatingRowBackground="#e0e0e0"
+                                AlternationCount="2"
+                                AutoGenerateColumns="False"
+                                CanUserReorderColumns="False"
+                                ColumnWidth="Auto"
+                                IsReadOnly="True"
+                                ItemsSource="{Binding TagStatistics}"
+                                SelectionMode="Single">
 
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="1*" />
-                                            <ColumnDefinition Width="1*" />
-                                        </Grid.ColumnDefinitions>
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Binding="{Binding TagName}" Header="Category" />
+                                    <DataGridTextColumn Binding="{Binding TagPercentage, Mode=OneWay, StringFormat={}{0:N}}" Header="% in this period" />
+                                    <DataGridTextColumn Binding="{Binding TotalExpense, Mode=OneWay, StringFormat={}{0:N}}" Header="Total € in this period" />
+                                    <DataGridTextColumn Binding="{Binding AvgExpense, Mode=OneWay, StringFormat={}{0:N}}" Header="AVG € in this period" />
+                                </DataGrid.Columns>
 
-                                        <Grid Grid.Column="0">
+                            </DataGrid>
+                        </StackPanel>
 
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="2*" />
-                                                <ColumnDefinition Width="1*" />
-                                                <ColumnDefinition Width="1*" />
-                                                <ColumnDefinition Width="1*" />
-                                            </Grid.ColumnDefinitions>
 
-                                            <TextBlock Grid.Column="0" Text="{Binding TagName}" />
-                                            <TextBlock Grid.Column="1"><Run Text="{Binding TagPercentage, Mode=OneWay}" />%</TextBlock>
-                                            <TextBlock Grid.Column="2">Total: <Run Text="{Binding TotalExpense, Mode=OneWay}" />€</TextBlock>
-                                            <TextBlock Grid.Column="3">Avg: <Run Text="{Binding AvgExpense, Mode=OneWay}" />€</TextBlock>
+                        <StackPanel
+                            Grid.Column="1"
+                            HorizontalAlignment="Center"
+                            Orientation="Horizontal">
+                            <TextBlock Text="TODO Grafici" />
+                        </StackPanel>
 
-                                        </Grid>
-
-                                        <StackPanel HorizontalAlignment="Center" Grid.Column="1" Orientation="Horizontal">
-                                            <TextBlock Text="TODO Grafici" />
-                                        </StackPanel>
-
-                                    </Grid>
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-
-                        </ItemsControl>
-
-                        <!--  TODO Qualche bel grafico a destra e ciao. Una torta o un istogramma  -->
-                    </StackPanel>
+                    </Grid>
 
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
