@@ -10,7 +10,7 @@ The main idea is to parse a list of `MoneyTransaction`(s) that come from the typ
 IMHO those questions are useful to organize and take decisions about everyday life, so I decided to code an application to help me out.
 
 # The abstraction
-You can see the whole application logic by reading `MoneyTransactionsImporter` that contains and consumes all abstractions I defined:
+You can see much of the whole application logic by reading `MoneyTransactionsImporter` that contains and consumes all abstractions I defined:
 1. You parse a list of raw transactions (strings)
 2. With a frontend and some rules you assign tags to each transaction
 3. You store the raw list and the parsed list somewhere for history purposes
