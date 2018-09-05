@@ -1,8 +1,9 @@
 ﻿using GalaSoft.MvvmLight;
-using HowWeSpendOurMoney.Domain;
 using HowWeSpendOurMoney.Infrastructure;
+using HowWeSpendOurMoneyGui.Model;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace HowWeSpendOurMoneyGui.ViewModel
@@ -12,8 +13,8 @@ namespace HowWeSpendOurMoneyGui.ViewModel
         private readonly IAnalysysRepository _analysysRepository;
         private readonly Task _loadingTask;
 
-        public IEnumerable<PeriodAnalysis> PeriodAnalyses { get; private set; }
-
+        public IEnumerable<YearsSplitPeriodAnalyses> PeriodAnalyses { get; private set; }
+        
         public AnalysisViewModel(IAnalysysRepository analysysRepository)
         {
             _analysysRepository = analysysRepository ?? throw new ArgumentNullException(nameof(analysysRepository));
@@ -22,7 +23,12 @@ namespace HowWeSpendOurMoneyGui.ViewModel
 
         private async Task LoadAnalysys()
         {
-            PeriodAnalyses = await _analysysRepository.GetAll();
+            var analyses = await _analysysRepository.GetAll();
+            PeriodAnalyses = analyses
+                .GroupBy(a => a.From.Year)
+                .Select(g => new YearsSplitPeriodAnalyses(
+                    g.Key,
+                    g.Select(p => p)));
             RaisePropertyChanged(() => PeriodAnalyses);
         }
 

@@ -74,6 +74,7 @@
       <DependentUpon>AnalysisWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\TagsNumberIconConverter.cs" />
+    <Compile Include="Model\YearsSplitPeriodAnalyses.cs" />
     <Compile Include="RulesWindow.xaml.cs">
       <DependentUpon>RulesWindow.xaml</DependentUpon>
     </Compile>
