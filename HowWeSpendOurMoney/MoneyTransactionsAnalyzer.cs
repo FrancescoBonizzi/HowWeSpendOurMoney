@@ -58,7 +58,12 @@ namespace HowWeSpendOurMoney
             if (intervalBetweenDates > TimeSpan.FromDays(31))
             {
                 periodName = $"Year: {from.Year}";
-                avgDivisor = ((to.Year - from.Year) * 12) + (to.Month - from.Month);
+                avgDivisor = thisPeriodTransactions
+                    .Select(p => (p.Date.Year, p.Date.Month))
+                    .Distinct()
+                    .Count();
+                // I could just do: ((to.Year - from.Year) * 12) + (to.Month - from.Month);
+                // but it would lead to wrong results if transactions don't have all months of the year
             }
             else
             {
