@@ -106,7 +106,7 @@ namespace HowWeSpendOurMoney
                 new ContainsTextRule("bar", "Extra", "Uscite", "Cibo"),
                 new ContainsTextRule("com.ord.ricorrenti", "Commissioni", "Banca"),
                 new ContainsTextRule("francesco bonizzi-chiara bertoletti", "Casa"),
-                new ContainsTextRule("bollettino", "Extra"),
+                //new ContainsTextRule("bollettino", "Extra"),
                 new ContainsTextRule("blu ranieri", "Cibo", "Spesa"),
                 new ContainsTextRule("aldi", "Cibo", "Spesa"),
             };

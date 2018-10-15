@@ -18,6 +18,7 @@ namespace HowWeSpendOurMoneyGui.ViewModel
             SimpleIoc.Default.Register<IMoneyTransactionsAnalyzer, MoneyTransactionsAnalyzer>();
             SimpleIoc.Default.Register<IAnalysysRepository, InMemoryAnalysysRepository>();
 
+            // TODO! Voglio che siano transient
             SimpleIoc.Default.Register<AnalysisViewModel>();
             SimpleIoc.Default.Register<MainWindowViewModel>();
         }
