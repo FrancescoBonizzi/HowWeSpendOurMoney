@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowWeSpendOurMoney", "HowWeSpendOurMoney\HowWeSpendOurMoney.csproj", "{7F858E30-1807-4CA4-ACC4-2F10A22384C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HowWeSpendOurMoney", "HowWeSpendOurMoney\HowWeSpendOurMoney.csproj", "{7F858E30-1807-4CA4-ACC4-2F10A22384C4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowWeSpendOurMoneyGui", "HowWeSpendOurMoneyGui\HowWeSpendOurMoneyGui.csproj", "{C4CA8303-0D5D-4C50-92BC-6FD956A1FED1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D88397D8-D75D-4B5D-8EB3-7EE7A0FB519D}"
+	ProjectSection(SolutionItems) = preProject
+		license.txt = license.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
