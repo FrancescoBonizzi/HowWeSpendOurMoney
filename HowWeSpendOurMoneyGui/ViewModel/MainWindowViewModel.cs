@@ -21,6 +21,7 @@ namespace HowWeSpendOurMoneyGui.ViewModel
         private IEnumerable<string> _rawMoneyTransactions;
 
         public ICommand ParseBPMCommand { get; }
+        public ICommand INGCommand { get; }
         public ICommand AddTagToSelectedTransaction { get; }
         public ICommand RemoveTagFromSelectedTransaction { get; }
         public ICommand ExitApplicationCommand { get; }
@@ -44,6 +45,8 @@ namespace HowWeSpendOurMoneyGui.ViewModel
 
             MoneyTransactions = new ObservableCollection<MoneyTransaction>();
             ParseBPMCommand = new RelayCommand(ImportBPMCommandMethod);
+            INGCommand = new RelayCommand(ImportINGCommandMethod);
+
             ExitApplicationCommand = new RelayCommand(() => System.Windows.Application.Current.Shutdown());
             ImportAllCommand = new RelayCommand(ImportAllMethod, () => MoneyTransactions.Any() && !MoneyTransactions.Any(m => !m.Tags.Any()));
             ClearAllCommand = new RelayCommand(() => MoneyTransactions.Clear(), () => MoneyTransactions.Any());
@@ -123,6 +126,23 @@ namespace HowWeSpendOurMoneyGui.ViewModel
 
             // https://www.wpf-tutorial.com/listview-control/listview-data-binding-item-template/
             // Messenger.Default.Send<NotificationMessage>(new NotificationMessage("Employees Loaded."));
+        }
+
+        private void ImportINGCommandMethod()
+        {
+            var openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == false)
+                return;
+
+            _rawMoneyTransactions = File.ReadAllLines(openFileDialog.FileName);
+            var parser = new IngXlsHtmlTransactionParser();
+            var parsedTransactions = parser.ParseTransactions(_rawMoneyTransactions);
+
+            foreach (var parsedTransaction in parsedTransactions)
+                _importingRules.ApplyRules(parsedTransaction);
+            
+            MoneyTransactions = new ObservableCollection<MoneyTransaction>(parsedTransactions.OrderBy(p => p.Tags.Count));
+            RaisePropertyChanged(() => MoneyTransactions);
         }
 
         private MoneyTransaction _selectedTransaction;

@@ -18,7 +18,7 @@
                 <MenuItem Header="File">
                     <MenuItem Header="Import">
                         <MenuItem Command="{Binding ParseBPMCommand}" Header="BPM" />
-                        <MenuItem Header="ING Direct" IsEnabled="False" />
+                        <MenuItem  Command="{Binding INGCommand}" Header="ING Direct"  />
                     </MenuItem>
                     <MenuItem Header="Analysis" Click="MenuItem_Click" /> <!-- TODO Tmp-->
                     <MenuItem Header="History" />

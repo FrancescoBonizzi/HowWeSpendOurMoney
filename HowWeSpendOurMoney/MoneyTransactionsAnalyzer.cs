@@ -15,7 +15,7 @@ namespace HowWeSpendOurMoney
             var yearMonthAnalysis = new List<PeriodAnalysis>();
 
             var allYears = allTransactions
-                .Select(t => t.Date.Year)
+                .Select(t => t.AccountingDate.Year)
                 .Distinct()
                 .OrderBy(y => y);
             foreach (var year in allYears)
@@ -27,7 +27,7 @@ namespace HowWeSpendOurMoney
             }
 
             var allMonths = allTransactions
-                .Select(t => (Year: t.Date.Year, Month: t.Date.Month))
+                .Select(t => (Year: t.AccountingDate.Year, Month: t.AccountingDate.Month))
                 .Distinct()
                 .OrderBy(m => m.Year)
                 .ThenBy(m => m.Month);
@@ -47,7 +47,7 @@ namespace HowWeSpendOurMoney
             DateTimeOffset from,
             DateTimeOffset to)
         {
-            var thisPeriodTransactions = allTransactions.Where(t => t.Date >= from && t.Date < to);
+            var thisPeriodTransactions = allTransactions.Where(t => t.AccountingDate >= from && t.AccountingDate < to);
 
             string periodName;
 
@@ -59,7 +59,7 @@ namespace HowWeSpendOurMoney
             {
                 periodName = $"Year: {from.Year}";
                 avgDivisor = thisPeriodTransactions
-                    .Select(p => (p.Date.Year, p.Date.Month))
+                    .Select(p => (p.AccountingDate.Year, p.AccountingDate.Month))
                     .Distinct()
                     .Count();
                 // I could just do: ((to.Year - from.Year) * 12) + (to.Month - from.Month);
