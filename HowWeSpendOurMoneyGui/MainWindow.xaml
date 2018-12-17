@@ -141,7 +141,7 @@
 
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
-                    <DataGridTextColumn Binding="{Binding Date}" Header="Date" />
+                    <DataGridTextColumn Binding="{Binding AccountingDate}" Header="Date" />
                     <DataGridTextColumn Binding="{Binding Currency}" Header="Currency" />
                     <DataGridTextColumn Binding="{Binding Amount}" Header="Amount" />
                     <DataGridTextColumn Binding="{Binding Description}" Header="Description" />
