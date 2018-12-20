@@ -31,7 +31,8 @@ namespace HowWeSpendOurMoney.Rules
 
         public IEnumerable<string> GetTagsToApply(MoneyTransaction transaction)
         {
-            if (transaction.Description.Contains(TextToSearch))
+           
+            if (transaction.Description.ToLower().Contains(TextToSearch.ToLower()))
                 return _tagsToApply;
 
             return new List<string>();

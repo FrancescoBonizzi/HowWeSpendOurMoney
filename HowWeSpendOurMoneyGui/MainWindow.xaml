@@ -18,7 +18,7 @@
                 <MenuItem Header="File">
                     <MenuItem Header="Import">
                         <MenuItem Command="{Binding ParseBPMCommand}" Header="BPM" />
-                        <MenuItem Header="ING Direct" IsEnabled="False" />
+                        <MenuItem  Command="{Binding INGCommand}" Header="ING Direct"  />
                     </MenuItem>
                     <MenuItem Header="Analysis" Click="MenuItem_Click" /> <!-- TODO Tmp-->
                     <MenuItem Header="History" />
@@ -141,7 +141,7 @@
 
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
-                    <DataGridTextColumn Binding="{Binding Date}" Header="Date" />
+                    <DataGridTextColumn Binding="{Binding AccountingDate}" Header="Date" />
                     <DataGridTextColumn Binding="{Binding Currency}" Header="Currency" />
                     <DataGridTextColumn Binding="{Binding Amount}" Header="Amount" />
                     <DataGridTextColumn Binding="{Binding Description}" Header="Description" />

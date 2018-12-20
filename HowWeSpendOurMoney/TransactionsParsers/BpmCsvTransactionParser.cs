@@ -21,7 +21,7 @@ namespace HowWeSpendOurMoney.TransactionsParsers
             {
                 var splitted = rawTransaction.Split(';');
                 moneyTransactions.Add(new MoneyTransaction(
-                    date: DateTime.Parse(splitted[0]),
+                    accountingDate: DateTime.Parse(splitted[0]),
                     amount: decimal.Parse(splitted[2]),
                     currency: splitted[3],
                     description: splitted[4]));

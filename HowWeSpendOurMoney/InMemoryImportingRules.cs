@@ -109,6 +109,12 @@ namespace HowWeSpendOurMoney
                 //new ContainsTextRule("bollettino", "Extra"),
                 new ContainsTextRule("blu ranieri", "Cibo", "Spesa"),
                 new ContainsTextRule("aldi", "Cibo", "Spesa"),
+                new ContainsTextRule("isolutions", "Stipendio"),
+                new ContainsTextRule("DISTRIBUTORE IP", "Carburante"),
+                new ContainsTextRule("MINO ACCONCIATURE", "Barbiere"),
+                new ContainsTextRule("conto comune", "contocomune"),
+                new ContainsTextRule("pensione", "pensione"),
+                new ContainsTextRule("solito", "solito"),
             };
             // TODO farlo caricare da file json anche
             // manca alla fine metto tutto in un file json, anche la parte sql, mah
