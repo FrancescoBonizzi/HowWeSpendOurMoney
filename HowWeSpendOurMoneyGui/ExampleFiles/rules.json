@@ -1,375 +1,938 @@
 [
   {
+    "TagsToApply": [
+      "Cibo",
+      "Spesa"
+    ],
     "TextToSearch": "superstore",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Spesa"
+    ],
     "TextToSearch": "supermercato",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Casa",
+      "Internet"
+    ],
     "TextToSearch": "telecom",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cellulare"
+    ],
     "TextToSearch": "orangecom",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "restaurant",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "ristorante",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "buca dei diavoli",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "mc donald's",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Casa"
+    ],
     "TextToSearch": "ikea",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Casa",
+      "Bollette"
+    ],
     "TextToSearch": "f24",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Casa",
+      "Corrente elettrica",
+      "Bollette"
+    ],
     "TextToSearch": "iren",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Casa",
+      "Mobili"
+    ],
     "TextToSearch": "nonna silvana",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Regali",
+      "Extra"
+    ],
     "TextToSearch": "migliore lorena",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Casa"
+    ],
     "TextToSearch": "contochiarafrancesco",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Macchina"
+    ],
     "TextToSearch": "genialloyd",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra"
+    ],
     "TextToSearch": "favore canta",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "prague",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra"
+    ],
     "TextToSearch": "decathlon",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Spesa"
+    ],
     "TextToSearch": "cagna & benelli",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Salute",
+      "Farmacia"
+    ],
     "TextToSearch": "farmacia",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra",
+      "Casa"
+    ],
     "TextToSearch": "xijun",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra",
+      "Casa"
+    ],
     "TextToSearch": "fu hao",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Spesa"
+    ],
     "TextToSearch": "conad",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "montaditos",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "i monelli",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "birra del borgo",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "asian mood",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "il torchio",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "sabah srl",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "time out",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "tenji",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "sushiko",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "liang sas",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "dama capricciosa",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "my sushi",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Vestiti",
+      "Extra"
+    ],
     "TextToSearch": "globo calzature",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Vestiti",
+      "Extra"
+    ],
     "TextToSearch": "ovs",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra",
+      "Palestra",
+      "Salute"
+    ],
     "TextToSearch": "well and fit",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Regali",
+      "Extra"
+    ],
     "TextToSearch": "mollard",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Regali",
+      "Extra"
+    ],
     "TextToSearch": "centro toys",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Libreria",
+      "Extra"
+    ],
     "TextToSearch": "liberalia",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Benzina",
+      "Macchina"
+    ],
     "TextToSearch": "totalerg",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Benzina",
+      "Macchina"
+    ],
     "TextToSearch": "l v noceto ita",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Benzina",
+      "Macchina"
+    ],
     "TextToSearch": "q8",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Benzina",
+      "Macchina"
+    ],
     "TextToSearch": "ads san giacomo nord",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra",
+      "Regali"
+    ],
     "TextToSearch": "pizzoni",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra",
+      "Vestiti"
+    ],
     "TextToSearch": "bata factory",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "food",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "burger",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "pizzeria",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "grease",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "the space cinema",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Banca",
+      "Commissioni"
+    ],
     "TextToSearch": "commissioni",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Banca",
+      "Commissioni"
+    ],
     "TextToSearch": "comm.",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Banca",
+      "Commissioni"
+    ],
     "TextToSearch": "int. e comp.",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Casa",
+      "Mutuo"
+    ],
     "TextToSearch": "bpmvita",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra"
+    ],
     "TextToSearch": "ricarica",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra"
+    ],
     "TextToSearch": "fiera milano spa",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra"
+    ],
     "TextToSearch": "centrale m2 milano",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra"
+    ],
     "TextToSearch": "comune di collecchio u colle",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra"
+    ],
     "TextToSearch": "noceto noceto ita",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra"
+    ],
     "TextToSearch": "m.av./r.av.",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "fidenzatram",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Spesa"
+    ],
     "TextToSearch": "lidl",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Casa",
+      "Amministratore condominio"
+    ],
     "TextToSearch": "traverso",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "CDC",
+      "Extra",
+      "Uscite"
+    ],
     "TextToSearch": "cartimpronta",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Contanti"
+    ],
     "TextToSearch": "prel",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Contanti"
+    ],
     "TextToSearch": "atm",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra"
+    ],
     "TextToSearch": "bed and breakfast",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra"
+    ],
     "TextToSearch": "bed & breakfast",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Benzina",
+      "Macchina"
+    ],
     "TextToSearch": "distributore",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Benzina",
+      "Macchina"
+    ],
     "TextToSearch": "pv3038",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Benzina",
+      "Macchina"
+    ],
     "TextToSearch": "sulis monica",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Benzina",
+      "Macchina"
+    ],
     "TextToSearch": "shell",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Benzina",
+      "Macchina"
+    ],
     "TextToSearch": "eni rete",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Benzina",
+      "Macchina"
+    ],
     "TextToSearch": "europam",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Benzina",
+      "Macchina"
+    ],
     "TextToSearch": "riccardi lino sergio",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Benzina",
+      "Macchina"
+    ],
     "TextToSearch": "ieva vincenzo",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Casa",
+      "Mutuo"
+    ],
     "TextToSearch": "mutuo",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Spesa"
+    ],
     "TextToSearch": "pronto carni",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Spesa"
+    ],
     "TextToSearch": "paladini",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Banca"
+    ],
     "TextToSearch": "canone conto corr",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Extra",
+      "Uscite",
+      "Cibo"
+    ],
     "TextToSearch": "bar",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Commissioni",
+      "Banca"
+    ],
     "TextToSearch": "com.ord.ricorrenti",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Casa"
+    ],
     "TextToSearch": "francesco bonizzi-chiara bertoletti",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Spesa"
+    ],
     "TextToSearch": "blu ranieri",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Cibo",
+      "Spesa"
+    ],
     "TextToSearch": "aldi",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Stipendio"
+    ],
     "TextToSearch": "isolutions",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Carburante"
+    ],
     "TextToSearch": "DISTRIBUTORE IP",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "Barbiere"
+    ],
     "TextToSearch": "MINO ACCONCIATURE",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "contocomune"
+    ],
     "TextToSearch": "conto comune",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "pensione"
+    ],
     "TextToSearch": "pensione",
     "RuleTypeName": "ContainsTextRule"
   },
   {
+    "TagsToApply": [
+      "solito"
+    ],
     "TextToSearch": "solito",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Gas",
+      "Bollette",
+      "Casa"
+    ],
+    "TextToSearch": "Gas Sales",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Extra",
+      "Hosting"
+    ],
+    "TextToSearch": "A2 Hosting",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Cibo",
+      "Spesa"
+    ],
+    "TextToSearch": "COOP",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Casa"
+    ],
+    "TextToSearch": "Rainieri",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Casa"
+    ],
+    "TextToSearch": "Casa",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Dolci"
+    ],
+    "TextToSearch": "MUCCI",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Cibo",
+      "Extra"
+    ],
+    "TextToSearch": "Roadhouse",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Cibo",
+      "Extra"
+    ],
+    "TextToSearch": "Dolce pasta cavallo",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Extra"
+    ],
+    "TextToSearch": "Stickermule",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Casa"
+    ],
+    "TextToSearch": "068 OBI",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Spese comuni",
+      "Casa"
+    ],
+    "TextToSearch": "Spese comuni",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Extra",
+      "Amazon"
+    ],
+    "TextToSearch": "AMZN",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Extra",
+      "TV"
+    ],
+    "TextToSearch": "Chili",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Extra"
+    ],
+    "TextToSearch": "Pixum",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Extra",
+      "Fiori"
+    ],
+    "TextToSearch": "Parma VIVAI",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Cibo",
+      "Spesa"
+    ],
+    "TextToSearch": "Sapori & dintorni",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Cibo",
+      "Extra"
+    ],
+    "TextToSearch": "Da filippo",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Extra"
+    ],
+    "TextToSearch": "Eccellenza di necesito",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Casa"
+    ],
+    "TextToSearch": "BRICOCENTER",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Extra"
+    ],
+    "TextToSearch": "bottega del fiore",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Cibo",
+      "Spesa"
+    ],
+    "TextToSearch": "frutta del borgo",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Extra",
+      "Tecnologia"
+    ],
+    "TextToSearch": "euronics",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Extra"
+    ],
+    "TextToSearch": "fiamminga",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Extra",
+      "Tecnologia"
+    ],
+    "TextToSearch": "fae srl",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TagsToApply": [
+      "Casa",
+      "Corrente elettrica"
+    ],
+    "TextToSearch": "Servizio elettrico nazionale",
     "RuleTypeName": "ContainsTextRule"
   }
 ]
-
