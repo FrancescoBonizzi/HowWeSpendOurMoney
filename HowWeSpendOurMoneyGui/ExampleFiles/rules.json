@@ -1,0 +1,375 @@
+[
+  {
+    "TextToSearch": "superstore",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "supermercato",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "telecom",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "orangecom",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "restaurant",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "ristorante",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "buca dei diavoli",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "mc donald's",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "ikea",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "f24",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "iren",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "nonna silvana",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "migliore lorena",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "contochiarafrancesco",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "genialloyd",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "favore canta",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "prague",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "decathlon",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "cagna & benelli",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "farmacia",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "xijun",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "fu hao",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "conad",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "montaditos",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "i monelli",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "birra del borgo",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "asian mood",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "il torchio",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "sabah srl",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "time out",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "tenji",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "sushiko",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "liang sas",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "dama capricciosa",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "my sushi",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "globo calzature",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "ovs",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "well and fit",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "mollard",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "centro toys",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "liberalia",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "totalerg",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "l v noceto ita",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "q8",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "ads san giacomo nord",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "pizzoni",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "bata factory",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "food",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "burger",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "pizzeria",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "grease",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "the space cinema",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "commissioni",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "comm.",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "int. e comp.",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "bpmvita",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "ricarica",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "fiera milano spa",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "centrale m2 milano",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "comune di collecchio u colle",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "noceto noceto ita",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "m.av./r.av.",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "fidenzatram",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "lidl",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "traverso",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "cartimpronta",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "prel",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "atm",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "bed and breakfast",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "bed & breakfast",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "distributore",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "pv3038",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "sulis monica",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "shell",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "eni rete",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "europam",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "riccardi lino sergio",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "ieva vincenzo",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "mutuo",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "pronto carni",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "paladini",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "canone conto corr",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "bar",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "com.ord.ricorrenti",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "francesco bonizzi-chiara bertoletti",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "blu ranieri",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "aldi",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "isolutions",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "DISTRIBUTORE IP",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "MINO ACCONCIATURE",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "conto comune",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "pensione",
+    "RuleTypeName": "ContainsTextRule"
+  },
+  {
+    "TextToSearch": "solito",
+    "RuleTypeName": "ContainsTextRule"
+  }
+]
+

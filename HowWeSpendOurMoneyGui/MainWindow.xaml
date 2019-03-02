@@ -18,13 +18,14 @@
                 <MenuItem Header="File">
                     <MenuItem Header="Import">
                         <MenuItem Command="{Binding ParseBPMCommand}" Header="BPM" />
-                        <MenuItem  Command="{Binding INGCommand}" Header="ING Direct"  />
+                        <MenuItem Command="{Binding INGCommand}" Header="ING Direct" />
                     </MenuItem>
-                    <MenuItem Header="Analysis" Click="MenuItem_Click" /> <!-- TODO Tmp-->
+                    <MenuItem Click="MenuItem_Click" Header="Analysis" />
+                    <!--  TODO Tmp  -->
                     <MenuItem Header="History" />
                     <MenuItem Header="Importing rules" />
                     <Separator />
-                    <MenuItem Command="{Binding ExitApplicationCommand}"  Header="Exit" />
+                    <MenuItem Command="{Binding ExitApplicationCommand}" Header="Exit" />
 
                 </MenuItem>
             </Menu>
@@ -38,14 +39,14 @@
                     Width="80"
                     Margin="5"
                     Padding="16,5"
-                    Content="Import"
-                    Command="{Binding ImportAllCommand}"/>
+                    Command="{Binding ImportAllCommand}"
+                    Content="Import" />
                 <Button
                     Width="80"
                     Margin="5"
                     Padding="16,5"
-                    Content="Clear"
-                    Command="{Binding ClearAllCommand}" />
+                    Command="{Binding ClearAllCommand}"
+                    Content="Clear" />
                 <Button
                     Width="80"
                     Margin="5"
@@ -128,15 +129,18 @@
                 CanUserReorderColumns="False"
                 ColumnWidth="Auto"
                 IsReadOnly="True"
-                SelectionMode="Single"
                 ItemsSource="{Binding MoneyTransactions}"
-                SelectedItem="{Binding SelectedTransaction}">
+                SelectedItem="{Binding SelectedTransaction}"
+                SelectionMode="Single">
 
                 <DataGrid.Columns>
                     <DataGridTemplateColumn>
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <Image Width="20" Height="20" Source="{Binding Tags.Count, Converter={StaticResource TagsNumberIconConverter}}" />
+                                <Image
+                                    Width="20"
+                                    Height="20"
+                                    Source="{Binding Tags.Count, Converter={StaticResource TagsNumberIconConverter}}" />
                             </DataTemplate>
 
                         </DataGridTemplateColumn.CellTemplate>

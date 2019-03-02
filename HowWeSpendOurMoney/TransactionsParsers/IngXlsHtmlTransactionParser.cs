@@ -16,7 +16,7 @@ namespace HowWeSpendOurMoney.TransactionsParsers
             if (moneyTransactionsRaw == null || !moneyTransactionsRaw.Any())
                 throw new MoneyTransactionsParsingException("moneyTransactionsRaw cannot be null or empty");
 
-            var allContent = String.Join("", moneyTransactionsRaw);
+            var allContent = string.Join("", moneyTransactionsRaw);
             var moneyTransactions = new List<MoneyTransaction>();
             HtmlDocument doc = new HtmlDocument();
             doc.LoadHtml(allContent);

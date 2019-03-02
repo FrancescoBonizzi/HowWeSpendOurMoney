@@ -2,7 +2,6 @@
 using HowWeSpendOurMoney.Exceptions;
 using HowWeSpendOurMoney.Infrastructure;
 using HowWeSpendOurMoney.Rules;
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -12,13 +11,11 @@ namespace HowWeSpendOurMoney
 {
     public class InMemoryImportingRules : IImportingRules
     {
-        private readonly IMoneyTransactionsRepository _moneyTransactionsRepository;
-        private readonly ICollection<IRule> _rules;
+        private readonly HashSet<IRule> _rules;
 
-        public InMemoryImportingRules(IMoneyTransactionsRepository moneyTransactionsRepository)
+        public InMemoryImportingRules()
         {
-            _moneyTransactionsRepository = moneyTransactionsRepository ?? throw new ArgumentNullException(nameof(moneyTransactionsRepository));
-            _rules = new List<IRule>()
+            _rules = new HashSet<IRule>()
             {
                 new ContainsTextRule("superstore", "Cibo", "Spesa"),
                 new ContainsTextRule("supermercato", "Cibo", "Spesa"),
@@ -101,12 +98,10 @@ namespace HowWeSpendOurMoney
                 new ContainsTextRule("mutuo", "Casa", "Mutuo"),
                 new ContainsTextRule("pronto carni", "Cibo", "Spesa"),
                 new ContainsTextRule("paladini", "Cibo", "Spesa"),
-                //neww ContainsTextRule("vostra disposizione", "Bonifici"),
                 new ContainsTextRule("canone conto corr", "Banca"),
                 new ContainsTextRule("bar", "Extra", "Uscite", "Cibo"),
                 new ContainsTextRule("com.ord.ricorrenti", "Commissioni", "Banca"),
                 new ContainsTextRule("francesco bonizzi-chiara bertoletti", "Casa"),
-                //new ContainsTextRule("bollettino", "Extra"),
                 new ContainsTextRule("blu ranieri", "Cibo", "Spesa"),
                 new ContainsTextRule("aldi", "Cibo", "Spesa"),
                 new ContainsTextRule("isolutions", "Stipendio"),
@@ -116,8 +111,6 @@ namespace HowWeSpendOurMoney
                 new ContainsTextRule("pensione", "pensione"),
                 new ContainsTextRule("solito", "solito"),
             };
-            // TODO farlo caricare da file json anche
-            // manca alla fine metto tutto in un file json, anche la parte sql, mah
         }
 
         public Task AddRule(IRule rule)
