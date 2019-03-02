@@ -1,18 +1,14 @@
-﻿using System.Windows;
+﻿using HowWeSpendOurMoneyGui.ViewModel;
+using System.Windows;
 
 namespace HowWeSpendOurMoneyGui
 {
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(MainWindowViewModel mainWindowViewModel)
         {
             InitializeComponent();
-        }
-
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-            var w = new AnalysisWindow();
-            w.Show();
+            DataContext = mainWindowViewModel;
         }
     }
 }

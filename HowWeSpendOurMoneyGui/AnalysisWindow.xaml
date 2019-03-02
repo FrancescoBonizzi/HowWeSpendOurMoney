@@ -7,7 +7,6 @@
     Title="Analysis"
     Width="800"
     Height="450"
-    DataContext="{Binding AnalysisViewModel, Source={StaticResource Locator}}"
     mc:Ignorable="d">
 
     <TabControl ItemsSource="{Binding PeriodAnalyses}">

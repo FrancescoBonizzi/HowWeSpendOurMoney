@@ -7,7 +7,6 @@
     Title="How we spend our money?"
     Width="900"
     Height="600"
-    DataContext="{Binding MainWindowViewModel, Source={StaticResource Locator}}"
     mc:Ignorable="d">
 
     <Grid>
@@ -20,13 +19,12 @@
                         <MenuItem Command="{Binding ParseBPMCommand}" Header="BPM" />
                         <MenuItem Command="{Binding INGCommand}" Header="ING Direct" />
                     </MenuItem>
-                    <MenuItem Click="MenuItem_Click" Header="Analysis" />
+                    <MenuItem Command="{Binding ShowAnalysisCommand}" Header="Analysis" />
                     <!--  TODO Tmp  -->
                     <MenuItem Header="History" />
                     <MenuItem Header="Importing rules" />
                     <Separator />
                     <MenuItem Command="{Binding ExitApplicationCommand}" Header="Exit" />
-
                 </MenuItem>
             </Menu>
 

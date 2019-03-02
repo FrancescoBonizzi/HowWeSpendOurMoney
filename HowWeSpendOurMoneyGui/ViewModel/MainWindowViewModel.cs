@@ -3,6 +3,7 @@ using GalaSoft.MvvmLight.CommandWpf;
 using HowWeSpendOurMoney.Domain;
 using HowWeSpendOurMoney.Infrastructure;
 using HowWeSpendOurMoney.TransactionsParsers;
+using HowWeSpendOurMoneyGui.Services.Infrastructure;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
@@ -27,21 +28,28 @@ namespace HowWeSpendOurMoneyGui.ViewModel
         public ICommand ExitApplicationCommand { get; }
         public ICommand ImportAllCommand { get; }
         public ICommand ClearAllCommand { get; }
+        public ICommand ShowAnalysisCommand { get; }
 
         private readonly ITagsRepository _tagsRepository;
         private readonly IMoneyTransactionsImporter _moneyTransactionsImporter;
         private readonly IImportingRules _importingRules;
+        private readonly IDialogsManager _dialogsManager;
+        private readonly INavigator _navigator;
 
         public Task Initialization { get; private set; } // TODO: finché non è completato non mostrare la form
 
         public MainWindowViewModel(
             ITagsRepository tagsRepository,
             IMoneyTransactionsImporter moneyTransactionsImporter,
-            IImportingRules importingRules)
+            IImportingRules importingRules,
+            IDialogsManager dialogsManager,
+            INavigator navigator)
         {
             _tagsRepository = tagsRepository ?? throw new ArgumentNullException(nameof(tagsRepository));
             _moneyTransactionsImporter = moneyTransactionsImporter ?? throw new ArgumentNullException(nameof(moneyTransactionsImporter));
             _importingRules = importingRules ?? throw new ArgumentNullException(nameof(importingRules));
+            _dialogsManager = dialogsManager ?? throw new ArgumentNullException(nameof(dialogsManager));
+            _navigator = navigator ?? throw new ArgumentNullException(nameof(navigator));
 
             MoneyTransactions = new ObservableCollection<MoneyTransaction>();
             ParseBPMCommand = new RelayCommand(ImportBPMCommandMethod);
@@ -50,6 +58,8 @@ namespace HowWeSpendOurMoneyGui.ViewModel
             ExitApplicationCommand = new RelayCommand(() => System.Windows.Application.Current.Shutdown());
             ImportAllCommand = new RelayCommand(ImportAllMethod, () => MoneyTransactions.Any() && !MoneyTransactions.Any(m => !m.Tags.Any()));
             ClearAllCommand = new RelayCommand(() => MoneyTransactions.Clear(), () => MoneyTransactions.Any());
+
+            ShowAnalysisCommand = new RelayCommand(() => _navigator.ShowFormAnalysisWindow());
 
             AddTagToSelectedTransaction = new RelayCommand(
                 AddTagToSelectedTransactionMethod,
@@ -123,9 +133,6 @@ namespace HowWeSpendOurMoneyGui.ViewModel
             
             MoneyTransactions = new ObservableCollection<MoneyTransaction>(parsedTransactions.OrderBy(p => p.Tags.Count));
             RaisePropertyChanged(() => MoneyTransactions);
-
-            // https://www.wpf-tutorial.com/listview-control/listview-data-binding-item-template/
-            // Messenger.Default.Send<NotificationMessage>(new NotificationMessage("Employees Loaded."));
         }
 
         private void ImportINGCommandMethod()
