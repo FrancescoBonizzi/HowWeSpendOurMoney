@@ -1,4 +1,7 @@
 # HowWeSpendOurMoney
+
+[![Build status](https://flowsoftproject.visualstudio.com/GithubOpenSource/_apis/build/status/HowWeSpendOurMoney)](https://flowsoftproject.visualstudio.com/GithubOpenSource/_build/latest?definitionId=23)
+
 A simple library to parse money transactions from bank account and see some statistics.
 
 # The idea
