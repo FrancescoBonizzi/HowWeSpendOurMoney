@@ -23,9 +23,15 @@
 
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
 
-                    <ItemsControl Margin="0,10,0,0" ItemsSource="{Binding PeriodAnalyses}">
+                    <TabControl Margin="0,10,0,0" ItemsSource="{Binding PeriodAnalyses}">
 
-                        <ItemsControl.ItemTemplate>
+                        <TabControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding PeriodName, Mode=OneWay}" />
+                            </DataTemplate>
+                        </TabControl.ItemTemplate>
+                        
+                        <TabControl.ContentTemplate>
                             <DataTemplate>
 
                                 <Grid Margin="20">
@@ -73,8 +79,8 @@
                                 </Grid>
 
                             </DataTemplate>
-                        </ItemsControl.ItemTemplate>
-                    </ItemsControl>
+                        </TabControl.ContentTemplate>
+                    </TabControl>
 
                 </ScrollViewer>
 
