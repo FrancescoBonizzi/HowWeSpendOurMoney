@@ -2,7 +2,6 @@
 using HowWeSpendOurMoney.Exceptions;
 using HowWeSpendOurMoney.Infrastructure;
 using HtmlAgilityPack;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -13,10 +12,10 @@ namespace HowWeSpendOurMoney.TransactionsParsers
     {
         public IEnumerable<MoneyTransaction> ParseTransactions(IEnumerable<string> moneyTransactionsRaw)
         {
-            if (moneyTransactionsRaw == null || !moneyTransactionsRaw.Any())
+            if (moneyTransactionsRaw?.Any() != true)
                 throw new MoneyTransactionsParsingException("moneyTransactionsRaw cannot be null or empty");
 
-            var allContent = string.Join("", moneyTransactionsRaw);
+            var allContent = string.Concat(moneyTransactionsRaw);
             var moneyTransactions = new List<MoneyTransaction>();
             HtmlDocument doc = new HtmlDocument();
             doc.LoadHtml(allContent);
@@ -31,19 +30,21 @@ namespace HowWeSpendOurMoney.TransactionsParsers
             {
                 for (int trIndex = 2; trIndex < documentNode.ChildNodes.Count; trIndex++)
                 {
-                    HtmlNode []td = documentNode.ChildNodes[trIndex]
-                                                        .ChildNodes
-                                                        .Where(node=>node.NodeType == HtmlNodeType.Element)
-                                                        .ToArray();
+                    HtmlNode[] td = documentNode
+                        .ChildNodes[trIndex]
+                        .ChildNodes
+                        .Where(node => node.NodeType == HtmlNodeType.Element)
+                        .ToArray();
+
                     if (td.Length == 5)
                     {
                         moneyTransactions.Add(MoneyTransactionBuilder.Create()
-                                               .WithDescription(td[3].InnerText)
-                                               .InThisDates(td[0].InnerText, td[1].InnerText, "dd/MM/yyyy")
-                                               .WithMovementType(td[2].InnerText)
-                                               .WithThisTotal(_clearDecimalValue(td[4].InnerText), "it-IT")
-                                               .WithThisCurrency("EURO")
-                                               .Build());
+                            .WithDescription(td[3].InnerText)
+                            .InThisDates(td[0].InnerText, td[1].InnerText, "dd/MM/yyyy")
+                            .WithMovementType(td[2].InnerText)
+                            .WithThisTotal(_clearDecimalValue(td[4].InnerText), "it-IT")
+                            .WithThisCurrency("EURO")
+                            .Build());
                     }
                 }
             }

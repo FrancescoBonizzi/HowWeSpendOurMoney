@@ -23,7 +23,7 @@ namespace HowWeSpendOurMoney
         }
 
         public async Task ImportTransactions(
-            IEnumerable<string> rawMoneyTransactions, 
+            IEnumerable<string> rawMoneyTransactions,
             IEnumerable<MoneyTransaction> parsedMoneyTransactions)
         {
             await _moneyTransactionsRepository.StoreImportedTransactionsRaw(rawMoneyTransactions);
