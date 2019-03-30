@@ -21,7 +21,7 @@ namespace HowWeSpendOurMoney.Rules
             if (string.IsNullOrWhiteSpace(textToSearch))
                 throw new ArgumentNullException(nameof(textToSearch));
 
-            if (tagsToApply == null || !tagsToApply.Any())
+            if (tagsToApply?.Any() != true)
                 throw new ArgumentNullException(nameof(tagsToApply));
 
             TextToSearch = textToSearch;
@@ -32,7 +32,7 @@ namespace HowWeSpendOurMoney.Rules
 
         public IEnumerable<string> GetTagsToApply(MoneyTransaction transaction)
         {
-            if (transaction.Description.ToLower().Contains(TextToSearch.ToLower()))
+            if (transaction.Description.IndexOf(TextToSearch, StringComparison.CurrentCultureIgnoreCase) >= 0)
                 return TagsToApply;
 
             return new List<string>();
@@ -51,10 +51,10 @@ namespace HowWeSpendOurMoney.Rules
         public override bool Equals(object obj)
         {
             var rule = obj as ContainsTextRule;
-            return rule != null &&
-                   TextToSearch == rule.TextToSearch &&
-                   RuleTypeName == rule.RuleTypeName &&
-                   Description == rule.Description;
+            return rule != null
+                   && TextToSearch == rule.TextToSearch
+                   && RuleTypeName == rule.RuleTypeName
+                   && Description == rule.Description;
         }
 
         public override int GetHashCode()

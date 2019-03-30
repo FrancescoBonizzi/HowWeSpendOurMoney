@@ -1,6 +1,6 @@
-﻿using HowWeSpendOurMoney.Infrastructure;
+﻿using HowWeSpendOurMoney.Domain;
+using HowWeSpendOurMoney.Infrastructure;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -14,7 +14,7 @@ namespace HowWeSpendOurMoney
         {
             _tags = new List<string>()
             {
-                "Cibo", "Spesa", "Benzina", "Macchina", "Extra", "Da rivedere"
+                "Cibo", "Spesa", "Benzina", "Macchina", "Extra", "Da rivedere", Definitions.IgnoreTag
             };
         }
 

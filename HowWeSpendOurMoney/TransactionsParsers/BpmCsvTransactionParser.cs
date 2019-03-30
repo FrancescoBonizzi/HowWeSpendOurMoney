@@ -12,7 +12,7 @@ namespace HowWeSpendOurMoney.TransactionsParsers
     {
         public IEnumerable<MoneyTransaction> ParseTransactions(IEnumerable<string> moneyTransactionsRaw)
         {
-            if (moneyTransactionsRaw == null || !moneyTransactionsRaw.Any())
+            if (moneyTransactionsRaw?.Any() != true)
                 throw new MoneyTransactionsParsingException("moneyTransactionsRaw cannot be null or empty");
 
             var moneyTransactions = new List<MoneyTransaction>();

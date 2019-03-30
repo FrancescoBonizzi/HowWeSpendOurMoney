@@ -36,7 +36,7 @@ namespace HowWeSpendOurMoney
                         case nameof(ContainsTextRule):
 
                             var tagsToApplyString = new List<string>();
-                            foreach(var c in r.TagsToApply.Children())
+                            foreach (var c in r.TagsToApply.Children())
                             {
                                 tagsToApplyString.Add(c.ToString());
                             }
@@ -73,6 +73,7 @@ namespace HowWeSpendOurMoney
         public void ApplyRules(MoneyTransaction transaction)
         {
             IEnumerable<string> ruleAppliedTags = transaction.Tags;
+
             foreach (var rule in _rules)
             {
                 ruleAppliedTags = ruleAppliedTags.Concat(rule.GetTagsToApply(transaction));

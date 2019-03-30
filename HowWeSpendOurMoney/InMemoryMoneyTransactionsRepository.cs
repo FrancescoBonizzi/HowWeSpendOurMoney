@@ -1,5 +1,4 @@
 ﻿using HowWeSpendOurMoney.Domain;
-using HowWeSpendOurMoney.Exceptions;
 using HowWeSpendOurMoney.Infrastructure;
 using System;
 using System.Collections.Generic;

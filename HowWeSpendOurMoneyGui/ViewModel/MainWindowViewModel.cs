@@ -128,6 +128,9 @@ namespace HowWeSpendOurMoneyGui.ViewModel
             var parser = new BpmCsvTransactionParser();
             var parsedTransactions = parser.ParseTransactions(_rawMoneyTransactions);
 
+            // I exclude all positive transactions: here I just want to analyze my expenses
+            parsedTransactions = parsedTransactions.Where(t => t.Amount < 0);
+
             foreach (var parsedTransaction in parsedTransactions)
                 _importingRules.ApplyRules(parsedTransaction);
             
@@ -144,6 +147,8 @@ namespace HowWeSpendOurMoneyGui.ViewModel
             _rawMoneyTransactions = File.ReadAllLines(openFileDialog.FileName);
             var parser = new IngXlsHtmlTransactionParser();
             var parsedTransactions = parser.ParseTransactions(_rawMoneyTransactions);
+
+            parsedTransactions = parsedTransactions.Where(t => t.Amount < 0);
 
             foreach (var parsedTransaction in parsedTransactions)
                 _importingRules.ApplyRules(parsedTransaction);
